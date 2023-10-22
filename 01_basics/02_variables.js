@@ -23,3 +23,16 @@ accountCity = "Bengaluru"
 console.log(accountId);
 
 console.table([accountId, accountEmail, accountPassword, accountCity, accountState])
+
+
+/* Output
+┌─────────┬────────────────┐
+│ (index) │     Values     │
+├─────────┼────────────────┤
+│    0    │     138913     │
+│    1    │ 'kjs@jakj.com' │
+│    2    │  '234245456'   │
+│    3    │  'Bengaluru'   │
+│    4    │   undefined    │
+└─────────┴────────────────┘
+*/
