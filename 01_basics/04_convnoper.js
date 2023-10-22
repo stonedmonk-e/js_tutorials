@@ -44,3 +44,19 @@ let num = 78
 let stringNum = String(num)
 console.log(stringNum);
 console.log(typeof stringNum);
+
+/* Output
+boolean
+boolean
+true
+boolean
+number
+number
+string
+string
+number
+NaN
+number
+78
+string
+*/
