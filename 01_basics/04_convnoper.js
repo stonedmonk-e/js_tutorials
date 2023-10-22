@@ -1,3 +1,4 @@
+
 // Conversions & Operations
 
 //for bool variable
@@ -16,6 +17,7 @@ int 0 => false, any other value => true
 empty string ( "" ) => false, any char inside => true
 */
 
+/*
 // for int variable
 let score = 33
 
@@ -44,6 +46,7 @@ let num = 78
 let stringNum = String(num)
 console.log(stringNum);
 console.log(typeof stringNum);
+*/
 
 /* Output
 boolean
@@ -60,3 +63,43 @@ number
 78
 string
 */
+
+
+// ----- Operations ------
+
+let value = 3;
+let negValue = -value
+console.log(negValue);
+
+/*
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2**2); // this is 2^4
+console.log(2/2);
+console.log(2%2);
+*/
+
+
+console.log(1 + 2); // addition of int
+console.log("1" + "2"); // concatenation of strings
+
+console.log("1" + 2);
+console.log(1 + "2"); // in both cases output is 12
+
+// Type Conversions : ToPrimitive
+
+// if first one is string, all remaining are concatenared as string itself
+console.log("1" + "2" + 2);
+console.log("1" + 2 + 2); 
+
+// here first we get int, so first 2 digits are added as int
+console.log(1 + 2 + "2"); 
+
+console.log( (3+4) + '5');
+console.log( '5' + (3+4) ); // here above rule doesn't apply coz scope ends
+
+// this is converted into bool value
+console.log(+""); 
+console.log(+true); 
+
