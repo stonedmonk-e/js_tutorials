@@ -1,4 +1,4 @@
-// Stack(Primitive), Heap (Non-primitve) memory
+// Stack memory - (Primitive), Heap memory - (Non-primitve)
 
 let myName = "shashank";
 
