@@ -63,6 +63,8 @@ console.log(s2.trim());
 name
 */
 
+// replace function
+
 const url = "https://hit.com/hit%56boy"
 
 console.log( url.replace('%56', '-') );
