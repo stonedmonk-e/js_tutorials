@@ -34,7 +34,7 @@ console.log(gameName.charAt(3)); // s
 console.log(gameName.indexOf('n')); // 6
 
 /*
-3 methods for extracting a part of a string:
+3 Methods for extracting a part of a string:
 
 slice(start, end)
 substring(start, end)
