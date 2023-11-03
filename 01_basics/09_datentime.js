@@ -40,3 +40,12 @@ console.log(myCreatedDate3.getTime()); // 1673654400000 , for the date that we h
 
 console.log(Math.floor(Date.now()/1000)); // 1699035539 in seconds
 
+
+let date3 = new Date()
+console.log(date3.getMonth() + 1); // 10
+console.log(date3.getDay()); // 5
+
+
+date3.toLocaleString('default', {
+    weekday: "long",
+})
