@@ -51,7 +51,6 @@ console.log(Math.floor((Math.random()*10) + 1)); // gives only decimal values
 
 // or we can use ceil and lose +1 coz anyway we wont get 0 then
 
-
 // To set a range for Math.random()
 const min = 10
 const max = 40
