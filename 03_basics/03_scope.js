@@ -28,8 +28,8 @@ console.log("OUTER: ", x);
 // The global scope is different for when we run js code in coding environment, 
 // and different in the console of the inspect tab in browser
 
+// in browser it attaches to the Window object, while NodeJS uses an object named global.
 // it is for entire coding environment
-// it attaches to the Window object, while NodeJS uses an object named global.
 
 // Global variables are never garbage-collected. Polluting the global namespace can lead to name collision. 
 // This is a situation in which your code tries to use the same variable name for different things in the same namespace.
