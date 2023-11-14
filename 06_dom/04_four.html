@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and remove html elements</title>
+</head>
+<body style="background-color: #212121;color: aliceblue;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("ruby")
+
+    // optimised approach - coz we don't traverse DOM tree while adding a new element
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage("goLang")
+
+    //Editing content
+    const secondLang = document.querySelector("li:nth-child(2)") // we are selecting the 2nd child
+    // secondLang.innerHTML = "Mojo" // will change python to Mojo
+
+    // or using textContent
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli)
+
+    // another edit example - outerHTMl
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>SiuuScript</li>'
+
+    // remove 
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+</script>
+</html>
