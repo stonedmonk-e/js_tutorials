@@ -1,7 +1,7 @@
 # Projects related to DOM
 
 ## Project Link
-[click here] (https://github.com/hiteshchoudhary/js-hindi-youtube/blob/main/07_projects/projectsset1.md#project-link)
+[click here] (https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
 
 # Solution Code
 
@@ -68,5 +68,20 @@ form.addEventListener('submit', function (e) {
     comments.innerHTML = 'Normal Range';
   }
 });
+
+```
+
+## Project 3
+
+```javscript
+const clock = document.getElementById('clock');
+// const clock = document.querySelector('#clock');
+
+// time in miliseconds, 1000 => 1 sec
+setInterval(function(){
+  let date = new Date()
+  // console.log(date.toLocaleString());
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
 
 ```
